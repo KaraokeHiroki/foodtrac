@@ -95,26 +95,28 @@
 /* Main Section */
 .main {
     background-color: #fff;
+    overflow: scroll;
+    height: 90vh;
 }
 
 .main__container {
-    display: flex;
-    height: 90vh;
+    display: block;
     background-color: #fff;
     width: 100%;
-    
 }
 
 form {
-    margin-top: 50px;
-
+    margin-top: 20px;
+    margin-left: 20px;
+    text-align: center;
 }
 
 form input {
-    width: 250px;
+    width: 50%;
     height: 30px;
     outline: none;
-     
+    padding: 10px;
+    border-radius: 20px;
 }
 
 form button {
@@ -122,32 +124,38 @@ form button {
     height: 30px;
     border: none;
     outline: none;
+    border-radius: 20px;
     background: #77dd77;
     color: #fff;
     cursor: pointer;
 }
 
 .item__box {
-    margin-top: 50px;
+    margin-top: 100px; 
+    margin-left: 20px;
+    
 }
 
 .items {
     list-style: none;
-    width: 500px;
+    width: 400px;
+    margin-bottom: 100px;
 }
 
 .items li{
     position: relative;
     display: block;
-    padding: 0 10px;
-    line-height: 40px;
+    padding: 0 20px;
+    line-height: 70px;
     width: 100%;
-    height: 40px;
+    height: 70px;
     background: #77dd77;
     color: #000;
     list-style: none;
     cursor: pointer;
     transition: 0.5s linear;
+    margin-bottom: 10px;
+    border-radius: 10px;
 }
 
 .items li span {
@@ -156,7 +164,19 @@ form button {
     right: 0;
     width: 50px;
     text-align: center;
-    background: #f00
+    background: #77dd77;
+    border-radius: 10px;
+}
+
+.items li span:hover {
+    background: #f00;
+    transition: all 0.3s ease;
+}
+
+date  {
+    color: #000;
+    margin-left: 100px;
+    
 }
 
 /* Mobile Responsive */
@@ -172,7 +192,7 @@ form button {
     justify-self: center;
     width: 100%;
     margin: 0 auto;
-    height: 90vh;
+    
 }
 
 }

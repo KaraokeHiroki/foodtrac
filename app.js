@@ -12,6 +12,10 @@ myButton.addEventListener('click', (e)=>{
         const mySpan = document.createElement('span');
         mySpan.innerHTML = 'x';
         myList.appendChild(mySpan);
+        //create date
+        const myDate = document.createElement('date');
+        myDate.innerHTML = new Date().toLocaleString();
+        myList.appendChild(myDate);
     }
     const close = document.querySelectorAll('span');
     for(let i=0; i<close.length; i++){
@@ -23,5 +27,4 @@ myButton.addEventListener('click', (e)=>{
             }, 500);
         })
     }
-    inputText.value = "";
 });
