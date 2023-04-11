@@ -26,5 +26,5 @@ myButton.addEventListener('click', (e)=>{
                 close[i].parentElement.remove();
             }, 500);
         })
-    }
+    } 
 });
