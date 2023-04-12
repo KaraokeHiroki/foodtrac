@@ -28,3 +28,13 @@ myButton.addEventListener('click', (e)=>{
         })
     } 
 });
+
+const myReader = document.querySelector('.btn__reader');
+myReader.addEventListener('click', (e)=>{
+function onScanSuccess(decodedText, decodedResult) {
+    console.log(`Code scanned = ${decodedText}`, decodedResult);
+}
+var html5QrcodeScanner = new Html5QrcodeScanner(
+ "reader", { fps: 10, qrbox: 100 });
+html5QrcodeScanner.render(onScanSuccess);
+})

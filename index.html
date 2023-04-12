@@ -7,6 +7,7 @@
     <title>Foodtrac</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
 </head>
 <body>
     <!-- Navbar Section -->
@@ -35,14 +36,18 @@
                 <button type="submit" class="btn__add">
                     <i class="fa-solid fa-plus"></i>
                 </button>
+                <button type="submit" class="btn__reader">
+                    <i class="fa-solid fa-barcode"></i>
+                </button>
             </form>
             <div class="item__box">
                 <ul class="items">
                 </ul>
             </div>
-            
+            <div id="reader"></div>
         </div>
     </div> 
-    <script src="app.js"></script>
+    <script src="app.js"></script> 
+    <script src="https://unpkg.com/html5-qrcode"></script>
 </body>
 </html>

@@ -183,3 +183,7 @@ date  {
     color: #000;
     margin-left: 100px;  
 }
+
+#reader {
+    width: 25%;
+}
