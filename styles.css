@@ -135,48 +135,91 @@ form button {
     cursor: pointer;
 }
 
-.item__box {
+.item__container {
     margin-top: 100px; 
-    margin-left: 30px;
-    
+    margin-left: 30px;   
 }
 
-.items {
+.item__list {
     list-style: none;
     width: 400px;
     margin-bottom: 100px;
 }
 
-.items li{
-    position: relative;
-    display: block;
+.item {
+    background-color: #77dd77;
+    display: flex;
+    justify-content: space-between;
     padding: 0 20px;
     line-height: 70px;
     width: 100%;
     height: 70px;
-    background: #77dd77;
     color: #000;
-    list-style: none;
     cursor: pointer;
-    transition: 0.5s linear;
+    transition: all 0.5s ease;
     margin-bottom: 10px;
-    border-radius: 10px;
-    
+    border-radius: 10px;    
 }
 
-.items li span {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 50px;
-    text-align: center;
+.item li {
+    flex: 1;
+}
+
+.btn__complete {
+    background: #77dd77;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.btn__trash {
+    background: #77dd77;
+    color: #fff;
+    border: none;
+}
+
+.fa-trash, .fa-check {
+    pointer-events: none;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+    color:#000;
+    width: 95px;
+    cursor: pointer;
+    padding: 10px;
     background: #77dd77;
     border-radius: 10px;
 }
 
-.items li span:hover {
-    background: #f00;
-    transition: all 0.3s ease;
+
+.select {  
+    position: relative;
+    display: inline;
+    margin: 0 10px;
+    overflow: hidden;
+    background: #77dd77;
+  
+}
+
+.select::after {
+    content: "\25BC";
+    position: absolute;
+    background: #77dd77;
+    top: 0; 
+    right: 0;
+    padding: 0;
+    pointer-events: none;
 }
 
 date  {

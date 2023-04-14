@@ -19,7 +19,7 @@
                     <a href="./" class="navbar__links"><i class="fa fa-house"></i>Home</a>
                 </li>
                 <li class="navbar__item">
-                    <a href="/completed.html" class="navbar__links"><i class="fa-solid fa-drumstick-bite"></i>Completed</a>
+                    <a href="/alerts.html" class="navbar__links"><i class="fa-solid fa-bell"></i>Alerts</a>
                 </li>
                 <li class="navbar__item">
                     <a href="/settings.html" class="navbar__links"><i class="fa-solid fa-gear"></i>Settings</a>
@@ -39,11 +39,18 @@
                 <button type="submit" class="btn__reader">
                     <i class="fa-solid fa-barcode"></i>
                 </button>
+                <div class="select">
+                    <select name="items" class="filter__item">
+                        <option value="all">All</option>
+                        <option value="completed">Completed</option>
+                        <option value="uncompleted">Uncompleted</option>
+                    </select>
+                </div>
             </form>
-            <div class="item__box">
-                <ul class="items">
-                </ul>
+            <div class="item__container">
+                <ul class="item__list"></ul>
             </div>
+
             <div id="reader"></div>
         </div>
     </div> 
