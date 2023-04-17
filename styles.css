@@ -137,19 +137,19 @@ form button {
 
 .item__container {
     margin-top: 100px; 
-    margin-left: 30px;   
+    margin-left: 30px; 
 }
 
 .item__list {
     list-style: none;
     width: 400px;
-    margin-bottom: 100px;
+    margin-bottom: 100px; 
 }
 
 .item {
     background-color: #77dd77;
     display: flex;
-    justify-content: space-between;
+    overflow-wrap: break-word;
     padding: 0 20px;
     line-height: 70px;
     width: 100%;
@@ -169,7 +169,7 @@ form button {
     background: #77dd77;
     color: #fff;
     border: none;
-    padding: 10px;
+    padding: 5px;
     cursor: pointer;
 }
 
@@ -177,9 +177,19 @@ form button {
     background: #77dd77;
     color: #fff;
     border: none;
+    padding: 5px;
+    cursor: pointer;
 }
 
-.fa-trash, .fa-check {
+.btn__alert {
+    background: #77dd77;
+    color: #fff;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.fa-trash, .fa-check, .fa-alert {
     pointer-events: none;
 }
 
@@ -195,21 +205,20 @@ select {
     outline: none;
     border: none;
     color:#000;
-    width: 95px;
+    width: 5%;
     cursor: pointer;
     padding: 10px;
     background: #77dd77;
     border-radius: 10px;
-}
 
+}
 
 .select {  
     position: relative;
     display: inline;
-    margin: 0 10px;
+    margin: 0 5px;
     overflow: hidden;
     background: #77dd77;
-  
 }
 
 .select::after {
@@ -224,9 +233,111 @@ select {
 
 date  {
     color: #000;
-    margin-left: 100px;  
 }
 
 #reader {
-    width: 25%;
+    width: 15%;
+    float: right;
+    margin-right: 100px;
 }
+
+/* Settings Page */
+.settings__container {
+    position: relative;
+    display: block;
+    margin: 40px 20px;
+}
+
+.settings__container i {
+    position: relative;
+    display: inline;
+    padding: 0 10px;
+}
+
+.notifications {
+    position: relative;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.location {
+    position: relative;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.storage {
+    position: relative;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.switch__container {
+    padding: 0 20px;
+    display: flex;
+    position: relative;
+   
+}
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    display: inline;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #77dd77;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #77dd77;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }

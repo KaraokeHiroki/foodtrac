@@ -29,16 +29,21 @@ function addList(event){
     itemDiv.appendChild(myDate);
     //add item to local storage
     saveLocalItems(inputText.value);
-    //check mark button
+    //create check mark button
     const completedButton = document.createElement('button');
     completedButton.innerHTML = '<i class="fas fa-check"></i>';
     completedButton.classList.add("btn__complete");
     itemDiv.appendChild(completedButton);
-    //check trash button
+    //create trash button
     const trashButton = document.createElement('button');
     trashButton.innerHTML = '<i class="fas fa-trash"></i>';
     trashButton.classList.add("btn__trash");
     itemDiv.appendChild(trashButton);
+    //create alert button
+    const alertButton = document.createElement('button');
+    alertButton.innerHTML = '<i class="fa-solid fa-bell"></i>';
+    alertButton.classList.add("btn__alert");
+    itemDiv.appendChild(alertButton);
     //append to list
     itemList.appendChild(itemDiv);
     //clear item input value
@@ -121,16 +126,21 @@ function getItems() {
         const myDate = document.createElement('date');
         myDate.innerHTML = new Date().toLocaleString();
         itemDiv.appendChild(myDate);
-        //check mark button
+        //create check mark button
         const completedButton = document.createElement('button');
         completedButton.innerHTML = '<i class="fas fa-check"></i>';
         completedButton.classList.add("btn__complete");
         itemDiv.appendChild(completedButton);
-        //check trash button
+        //create trash button
         const trashButton = document.createElement('button');
         trashButton.innerHTML = '<i class="fas fa-trash"></i>';
         trashButton.classList.add("btn__trash");
         itemDiv.appendChild(trashButton);
+          //create alert button
+        const alertButton = document.createElement('button');
+        alertButton.innerHTML = '<i class="fa-solid fa-bell"></i>';
+        alertButton.classList.add("btn__alert");
+        itemDiv.appendChild(alertButton);
         //append to list
         itemList.appendChild(itemDiv);
     });
