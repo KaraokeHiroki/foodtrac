@@ -142,21 +142,19 @@ form button {
 
 .item__list {
     list-style: none;
-    width: 400px;
+    width: 400px;   
     margin-bottom: 100px; 
 }
 
 .item {
     background-color: #77dd77;
     display: flex;
-    overflow-wrap: break-word;
-    padding: 0 20px;
-    line-height: 70px;
+    padding: 30px 10px; 
     width: 100%;
-    height: 70px;
+    height: 100%;
+    word-break: break-all;
     color: #000;
     cursor: pointer;
-    transition: all 0.5s ease;
     margin-bottom: 10px;
     border-radius: 10px;    
 }
@@ -204,13 +202,12 @@ select {
     appearance: none;
     outline: none;
     border: none;
-    color:#000;
+    color:#fff;
     width: 5%;
     cursor: pointer;
     padding: 10px;
     background: #77dd77;
     border-radius: 10px;
-
 }
 
 .select {  
@@ -219,6 +216,7 @@ select {
     margin: 0 5px;
     overflow: hidden;
     background: #77dd77;
+    color: #fff;
 }
 
 .select::after {
@@ -233,12 +231,15 @@ select {
 
 date  {
     color: #000;
+    padding: 0 5px;
 }
 
 #reader {
     width: 15%;
     float: right;
     margin-right: 100px;
+    position: relative;
+    display: flex;
 }
 
 /* Settings Page */
