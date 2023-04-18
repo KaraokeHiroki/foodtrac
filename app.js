@@ -166,6 +166,6 @@ function onScanSuccess(decodedText, decodedResult) {
     console.log(`Code scanned = ${decodedText}`, decodedResult);
 }
 var html5QrcodeScanner = new Html5QrcodeScanner(
- "reader", { fps: 10, qrbox: 100 });
+ "reader", { fps: 10, qrbox: 200 });
 html5QrcodeScanner.render(onScanSuccess);
 })
